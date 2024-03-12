@@ -1,5 +1,5 @@
 # AWS-Bedrock-LLMServerlessApp
-LLM app using AWS Bedrock
+LLM app using AWS Bedrock ( credits : www.learn.deeplearning.ai)
 ## Over all  use case:
 
 A typical use case where in a user calls into the customer service for specific issues that he/she is facing needs an help : To address this use case in a 
