@@ -1,21 +1,25 @@
 # AWS-Bedrock-LLMServerlessApp
-LLM app using AWS Bedrock ( credits : www.learn.deeplearning.ai)
-## Over all  use case:
+LLM app using AWS Bedrock ( credits : [www.learn.deeplearning.ai](https://www.deeplearning.ai/))
+## POC Overview And High Level Design
 
-A typical use case where in a user calls into the customer service for specific issues that he/she is facing needs a help by transcribing the call/ generating the sentiment using AWS bedrock. Send out alerts for any escalations ( Event driven using Lambda): To address this use case in a 
-traditional work flow we might need lot of code base / infra / setup.  Using AWS bedrock we could able to relatively automate this use case.
-
-1.AWS Lambda ( serverless)
-
-2.S3
-
-3.Bedrock
-
-4.ASR service ( AWS transcribe service)
+- Use of AWS-Bedrock to levarage a common problem of customer service department in handling a customer issue with their compnay's product or service.
+    - Create a base LLM app which uses jupitor notebook and AWS Bedrock to generate a  response for a given "prompt".
+    - Use a sample audio file , transcribe using AWS transcribe service and feed it to AWS Bedrock to solve a business problem( in this case summarize the call/determine if there is any problem that customer is having and enerate a alert if the issue is urgent)
+    - Below is the high-level Work flow /Architecture diagram.
+       ![High Level Design](./images/Bedrock_LLM_0.jpg)
 
 
+
+### Overview of the code:
+- 
 
 
 
 
-Note: This code under src can be run using Jupyter python notebook
+#### Below AWS service  were used
+- AWS Lambda ( serverless)
+- S3
+- Bedrock
+- AWS transcribe service
+
+Note: This code under src can be run using Jupyter python notebook.
