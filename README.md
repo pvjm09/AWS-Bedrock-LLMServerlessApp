@@ -6,7 +6,7 @@ LLM app using AWS Bedrock ( credits : [www.learn.deeplearning.ai](https://www.de
     - Create a base LLM app which uses jupitor notebook and AWS Bedrock to generate a  response for a given "prompt".
     - Use a sample audio file , transcribe using AWS transcribe service and feed it to AWS Bedrock to solve a business problem( in this case summarize the call/determine if there is any problem that customer is having and enerate a alert if the issue is urgent)
     - Below is the high-level Work flow /Architecture diagram.
-       ![High Level Design](./images/Bedrock_LLM_0.jpg)
+       ![High Level Design](./images/Bedrock_LLM_0.png)
 
 
 
