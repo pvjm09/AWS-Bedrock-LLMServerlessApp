@@ -1,4 +1,4 @@
-# AWS-Bedrock-LLMServerlessApp
+# AWS-Bedrock-LLMServerlessApp - WIP
 LLM app using AWS Bedrock ( credits : www.learn.deeplearning.ai)
 ## Over all  use case:
 
