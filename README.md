@@ -2,7 +2,7 @@
 LLM app using AWS Bedrock ( credits : [www.learn.deeplearning.ai](https://www.deeplearning.ai/))
 ## POC Overview And High Level Design
 
-- Below is the high-level Work flow /Architecture of a LLM app levaraging AWS-Bedrockto to solve a common problem of customer service department in handling a customer issue with their compnay's product or service.
+- Below is the high-level Work flow /Architecture of a LLM app levaraging AWS-Bedrockto to solve a common problem of customer service department in handling a customer issue with their compnay's product or service. Here user uploads the audio file in S3, Lambda triggers the AWS Transcribe  and based a specific "prompt" template invokes AWS bedrock for summary/sentiment analys of the call and publishes the summary to downstream.
        ![High Level Design](./images/Bedrock_LLM_0.png)
 
 1. Create a base LLM app which uses jupitor notebook and AWS Bedrock to generate a  response for a given "prompt".
