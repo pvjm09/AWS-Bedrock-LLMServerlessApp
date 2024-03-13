@@ -13,7 +13,7 @@ LLM app using AWS Bedrock ( credits : [www.learn.deeplearning.ai](https://www.de
 
 ### Overview of the code:
 1. Lets solve a try a basic prompt using below where in creating a instance of of AWS Bedrock runtime and running the code for a sample prompt.
-![High Level Design](./images/Bedrock_LLM_1.png)
+![High Level Design](./images/Bedrock_LLM_1.PNG)
 prompt Response
 ![High Level Design](./images/Bedrock_LLM_2.png)
 
