@@ -1,15 +1,17 @@
 # AWS-Bedrock-LLMServerlessApp
-LLM app using AWS Bedrock ( credits : [www.learn.deeplearning.ai](https://www.deeplearning.ai/))
+LLM(Large Language Model) app using AWS Bedrock ( credits : [www.learn.deeplearning.ai](https://www.deeplearning.ai/))
 ## POC Overview And High Level Design
 
-- Below is the high-level Work flow /Architecture of a LLM app levaraging AWS-Bedrockto to solve a common problem of customer service department in handling a customer issue with their compnay's product or service. Here user uploads the audio file in S3, Lambda triggers the AWS Transcribe  and based a specific "prompt" template invokes AWS bedrock for summary/sentiment analys of the call and publishes the summary to downstream.
-       ![High Level Design](./images/Bedrock_LLM_0.png)
-
-1. Create a base LLM app which uses jupitor notebook and AWS Bedrock to generate a  response for a given "prompt".
-2. Use a sample audio file , transcribe using AWS transcribe service and feed it to bedrock for sentiment analysis/prompt engineering.
+- Below is the high-level Work flow /Architecture of a LLM app levaraging AWS-Bedrockto to solve a common problem of customer service department in handling a customer issue with their compnay's product or service. 
+ - Sample audio file is submitted in S3 : transcribed using AWS transcribe service and fed into bedrock for sentiment analysis/summary of the call.
     - In this case summarize the call
     - Determine if there is any problem
     - Over all sentiment of the call ( Positive vs negative )
+
+       ![High Level Design](./images/Bedrock_LLM_0.png)
+
+1. Create a base LLM app which uses jupitor notebook and AWS Bedrock to generate a  response for a given "prompt".
+2. 
 
 ### Overview of the code:
 1. Lets solve a try a basic prompt using below where in creating a instance of of AWS Bedrock runtime and running the code for a sample prompt.
