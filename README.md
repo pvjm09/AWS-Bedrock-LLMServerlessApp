@@ -13,18 +13,19 @@ LLM app using AWS Bedrock ( credits : [www.learn.deeplearning.ai](https://www.de
 
 ### Overview of the code:
 1. Lets solve a try a basic prompt using below where in creating a instance of of AWS Bedrock runtime and running the code for a sample prompt.
-![High Level Design](./images/Bedrock_LLM_1.PNG)
-prompt Response
-![High Level Design](./images/Bedrock_LLM_2.png)
+![basic LLM Prompt](./images/Bedrock_LLM_1.PNG)
+
+   prompt Response
+   ![Prompt Response](./images/Bedrock_LLM_2.PNG)
 
 2. Here we are loading a sample audio file (which has customer conversation with rep) and load it into AWS S3 and transcribe using AWS Transcribe
-![High Level Design](./images/Bedrock_LLM_3.png)
+    ![Use of AWS Transcribe](./images/Bedrock_LLM_3.PNG)
 
 3.Here above text response(used as prompts) from audio will be fed to Bedrock runtime.
-![High Level Design](./images/Bedrock_LLM_4.PNG)
+![LLM response by Bedrock](./images/Bedrock_LLM_4.PNG)
 
 4.For a given expected promt structure below is the response . ofcourse this structure needs to be tuned for specific problem / industry.
-![High Level Design](./images/Bedrock_LLM_5.PNG)
+![LLM response by Bedrock-2](./images/Bedrock_LLM_5.PNG)
 
 
 
